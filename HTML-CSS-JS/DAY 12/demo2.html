@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height:200px;
+            width:200px;
+            border:2px solid black;
+        }
+        .A{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div onmouseover="fnOver(this)" onmouseout="fnOut(this)"></div>
+    </center>
+
+    <script>
+        function fnOver(data){
+            data.className = "A";
+        }
+        function fnOut(data){
+            data.classList.remove("A");
+        }
+    </script>
+</body>
+</html>

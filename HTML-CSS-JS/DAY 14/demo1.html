@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        div{
+            padding: 20px;
+            border: 2px solid black;
+            width: 800px;
+            margin: auto;
+            box-shadow: 2px 2px 5px grey;
+        }
+        td{
+            padding: 10px 20px;
+        }
+        .err{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <form  method="post" onsubmit="return val()">
+        <table>
+            
+            <th colspan="3">Add Record</th>
+            <tr>
+                <td>Full Name : </td>
+                <td><input type="text" name="FullName" id="FullName"></td>
+                <td><span class="err" id="errFullName"></span></td>
+            </tr>
+            <tr>
+                <td>Password : </td>
+                <td><input type="password" name="Password" id="Password"></td>
+                <td><span class="err" id="errPassword"></span></td>
+            </tr>
+            <tr>
+                <td>Re-Entry your password : </td>
+                <td><input type="password" name="Password1" id="Password1"></td>
+                <td><span class="err" id="errPassword1"></span></td>
+            </tr>
+            <tr>
+                <td>Email : </td>
+                <td><input type="text" name="Email" id="Email"></td>
+                <td><span class="err" id="errEmail"></span></td>
+            </tr>
+            <tr>
+                <td>Address : </td>
+                <td><textarea name="Address" id="Address" cols="30" rows="10"></textarea></td>
+                <td><span class="err" id="errAddress"></span></td>
+            </tr>
+            <tr>
+                <td>City : </td>
+                <td><select name="City" id="City">
+                    <option value="">Select City</option>
+                    <option value="Muzaffarpur">Muzaffarpur</option>
+                    <option value="Patna">Patna</option>
+                </select></td>
+                <td><span class="err" id="errCity"></span></td>
+            </tr>
+            <tr>
+                <td colspan="3"><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+
+
+<script>
+    function val(){
+    let F = true;
+
+    let FullName = document.getElementById('FullName');
+    let Password = document.getElementById('Password');
+    let Password1 = document.getElementById('Password1');
+    let Email = document.getElementById('Email');
+    let Address = document.getElementById('Address');
+    let City = document.getElementById('City');
+
+
+    let errFullName = document.getElementById('errFullName');
+    let errPassword = document.getElementById('errPassword');
+    let errPassword1 = document.getElementById('errPassword1');
+    let errEmail = document.getElementById('errEmail');
+    let errAddress = document.getElementById('errAddress');
+    let errCity = document.getElementById('errCity');
+
+
+    errFullName.value = ""
+    errPassword.value = ""
+    errPassword1.value = ""
+    errEmail.value = ""
+    errAddress.value = ""
+    errCity.value = ""
+
+    if(FullName.value == '')
+    {
+        errFullName.innerHTML = "Please enter your name"
+        F = false;
+    }
+    if(Password.value == '')
+    {
+        errPassword.innerHTML = "Please enter your password"
+        F = false;
+    }
+    if(Password1.value == '')
+    {
+        errPassword1.innerHTML = "Please re-enter password"
+        F = false;
+    }
+    if(Email.value == '')
+    {
+        errEmail.innerHTML = "Please enter your email"
+        F = false;
+    }
+    if(Address.value == '')
+    {
+        errAddress.innerHTML = "Please enter address"
+        F = false;
+    }
+    if(City.value == '')
+    {
+        errCity.innerHTML = "Please enter city"
+        F = false;
+    }
+
+
+    return F;
+    }
+</script>
+</body>
+</html>

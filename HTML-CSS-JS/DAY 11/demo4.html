@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myid"></div>
+
+    <script>
+        const str = document.getElementById('myid');
+        obj = {
+            'Name':'Ayush',
+            'Age':22,
+            'City':'Muzaffarpur',
+            data:function(){
+                return 'Name : '+this.Name+'<br> Age : '+this.Age;
+            }
+        }
+        str.innerHTML = obj.data();
+        //Others way of calling an object
+        
+        // obj.Name = 'kumar';
+        // obj['Age'] = 12;
+        // str.innerHTML = 'Name : '+obj.Name+'<br> Age : '+obj.Age;
+        
+    </script>
+</body>
+</html>

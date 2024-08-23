@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+</head>
+<body>
+    <form action="">
+        <table cellspacing="6" cellpadding="8">
+            <tr>
+                <td><label>First Name :</label></td>
+                <td><input type="text" name="FirstName" id="FirstName"></td>
+            </tr>
+            <tr >
+                <td><label>Second Name :</label></td>
+                <td><input type="text" name="SecondName" id="SecondName"></td>
+            </tr>
+            <tr>
+                <td><label>Password :</label></td>
+                <td><input type="password" name="pwd" id="pwd"></td>
+            </tr>
+            <tr>
+                <td>Address :</td>
+                <td><textarea name="Address" id="Address" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td>City :</td>
+                <td>
+                    <select name="City" id="City">
+                        <option value="">Select City</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Muzaffarpur">Muzaffarpur</option>
+                        <option value="Patna">Patna</option>
+                        <option value="Chappra">Chappra</option>
+                        <option value="Gorakhpur">Gorakhpur</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Training : </td>
+                <td>
+                    <input type="radio" name="Training" id="T1" value="HTML">
+                    <label for="T1">HTML</label>
+                    <br>
+                    <input type="radio" name="Training" id="T2" value="CSS">
+                    <label for="T2">CSS</label>
+                    <br>
+                    <input type="radio" name="Training" id="T3" value="Java Script">
+                    <label for="T3">Java Script</label>
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>Select Training</td>
+                <td>
+                    <input type="checkbox" name="SelectTraining1" id="chk1" value="HTMl">
+                    <label for="chk1">HTML</label><br>
+                    <input type="checkbox" name="SelectTraining2" id="chk2" value="CSS">
+                    <label for="chk2">CSS</label><br>
+                    <input type="checkbox" name="SelectTraining3" id="chk3" value="Java Script">
+                    <label for="chk3">Java Script</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="reset"></td>
+                <td><input type="submit" name="Add" id="Add" value="Add user!!!"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: grey;
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            background-color: white;
+            width: 1000px;
+            
+            /* border: 1px solid black; */
+            margin: auto;
+        }
+        .logo{
+            background-color: crimson;
+            font-size: 100px;
+        }
+        .nav ul{
+            margin-top: 0;
+            background-color: black;
+            list-style: none;
+        }
+        .nav ul li{
+            
+            display: inline;
+        }
+        .nav a{
+            text-decoration: none;
+            color:white ;
+            padding: 0px 10px;
+            border-right: 3px double white;
+        }
+        .nav a:hover{
+            /* font-size: 40px; */
+            background-color: white;
+            color: black;
+        }
+        .section{
+            width: 800px;
+            float: left;
+        }
+        .sidenav{
+            width: 200px;
+            float: right;
+        }
+        .footer{
+            border-top: 3px double black;
+            clear: both;
+            font-size: 12px;
+        }
+        .sidenav ul{
+            list-style: none;
+        }
+        .sidenav a{
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="logo">Macliys</div>    
+        <div class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="section">Home</div>
+        <div class="sidenav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="footer">Copyright &copy; Macliys 2024</div>
+    </div>
+</body>
+</html>

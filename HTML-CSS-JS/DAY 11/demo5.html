@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myid"></div>
+
+    <script>
+        let data = document.getElementById('myid');
+        let arr=['Ayush','Aditya','Sonu','Adarsh','Ayush','Aditya','Sonu','Adarsh','Ayush','Aditya','Sonu','Adarsh','Ayush','Aditya','Sonu','Adarsh']
+
+        // data.innerHTML = arr;
+        // data.innerHTML = arr.length;
+        // data.innerHTML = arr[3];
+        // arr[4] = 'New Name'
+        // data.innerHTML = arr[4];
+        // for (let index = 0; index < arr.length; index++) {
+        //      data.innerHTML += arr[index] + "<br>";
+            
+        // }
+        // for(const index in arr){
+        //     data.innerHTML += arr[index]+ "<br>"; 
+        // }
+        // obj = {
+        //     'Name':'Ayush',
+        //     'Age':22,
+        //     'City':'Muzaffarpur'
+        // }
+        // for(const i in obj){
+        //     data.innerHTML += obj[i] + "<br>";
+        // }
+
+        //NOTE : Forof do not works in the case of object ,it only works in the case of iterable 
+        data.innerHTML +=  "Data from forof <br>";
+        for (const i of arr) {                                                                          
+            data.innerHTML += i+"<br>" 
+        }
+
+    </script>
+</body>
+</html>

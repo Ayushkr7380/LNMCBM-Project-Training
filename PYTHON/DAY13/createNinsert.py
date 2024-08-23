@@ -1,0 +1,11 @@
+import sqlite3
+con = sqlite3.connect('lnm.db')
+cur = con.cursor()
+cur.execute('DROP TABLE IF EXISTS Cars')
+cur.execute('''CREATE TABLE Cars(Id INT , Name TEXT , Price INT) ''')
+print('Table cars Created..')
+cur.execute("INSERT INTO Cars VALUES(11,'Audi',54687)")
+cur.execute("INSERT INTO Cars VALUES(21,'Mercedes',25478)")
+con.commit()
+con.close()
+print('Values in table cars inserted..')

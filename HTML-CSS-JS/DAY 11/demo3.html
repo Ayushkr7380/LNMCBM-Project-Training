@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Full Name : <input type="text" name="name" id="name">
+    <br>
+    <button id="btn" onclick="upper()">UpperCase</button>
+    <div id="myid"></div>
+
+    <script>
+        function upper(){
+            let name = document.getElementById('name');
+            let n = name.value;
+            let show = document.getElementById('myid');
+            show.innerHTML = fn(n)
+            name.value = ''
+        }
+        function fn(data){
+            let upperData = data.toUpperCase();
+            let nameCount = data.length;
+
+            return "Count : "+nameCount+" Name : "+upperData
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myid"></div>
+
+    <script>
+        let ctr = document.getElementById('myid');
+
+        function First(Name){
+            function Second(Age){
+                return "Name : "+Name+" Age : "+Age;
+            }
+            return Second;
+        }
+        ctr.innerHTML = First("Amit Singh")(32);
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (min-width : 480px){
+            body{
+                /* background-color: yellowgreen; */
+            }
+            .A{
+                display: block;
+            }
+            .B{
+                display: none;
+            }
+        }
+        @media screen and (max-width : 480px){
+            body{
+                /* background-color: pink; */
+            }
+            .A{
+                display: none;
+            }
+            .B{
+                display: block;
+            }
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            float: left;
+            margin: 20px;
+            border: 2px solid black;
+        }
+        .A{
+            background-color: blue;
+        }
+        .B{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="A"></div>
+    <div class="B"></div>
+</body>
+</html>

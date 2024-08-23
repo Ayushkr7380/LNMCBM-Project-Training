@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+            border:2px solid black;
+            background-color: powderblue;
+            margin: 20px;
+            float:left;
+        }
+    </style>
+</head>
+<body>
+    <div id="myid1" class="A">Welcome</div>
+    <div id="myid2" class="B">Welcome</div>
+    <div id="myid3" class="C">Welcome</div>
+
+
+    <script>
+        let ctr1 = document.getElementById('myid1');
+        let ctr2 = document.getElementById('myid2');
+        let ctr3 = document.getElementById('myid3');
+        
+        ctr1.addEventListener("click",fn);
+        function fn(){
+            ctr1.innerHTML = "Ayush";
+        }
+        ctr2.addEventListener("mouseover",fn1)
+        function fn1(){
+            ctr2.style.backgroundColor = 'red';
+        }
+        ctr2.addEventListener("mouseout",fn2);
+        function fn2(){
+            ctr2.style.backgroundColor = '';
+        }
+        ctr2.removeEventListener("mouseout",fn2)
+    </script>
+</body>
+</html>

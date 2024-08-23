@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myid"></div>
+
+    <script>
+        let d = new Date("11-24-2002");
+        let ctr = document.getElementById('myid');
+        // ctr.innerHTML = d;
+        // ctr.innerHTML = d.getDay();
+        ctr.innerHTML += "<br> Date : "+d.getDate();
+        ctr.innerHTML += "<br> Day : "+(d.getDay()+1);
+        ctr.innerHTML += "<br> Year : "+d.getFullYear();
+        ctr.innerHTML += "<br> Month : "+(d.getMonth()+1);
+    </script>
+</body>
+</html>
+

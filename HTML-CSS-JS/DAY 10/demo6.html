@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myid"></div>
+
+
+    <script>
+        let ctr = document.getElementById('myid');
+        let a = 5;
+        // for (let i= 0; i < a; i++) {
+
+        //     // if(i==5){
+        //     //     break;
+        //     // }
+        //     if(i==5){
+        //         continue;
+        //     }
+        //     ctr.innerHTML += i +"<br>";
+            
+        // }
+
+        // let j = 1 
+        // while(j<=a){
+        //     ctr.innerHTML = j + "<br>";
+        //     j++
+        // }
+        // let k = 1;
+        // do {
+        //     ctr.innerHTML = k + "<br>"
+        //     k++;
+        // } while (k<=a);
+
+        for( let i = 1;i <= 10 ; i++){
+            for(let j = 1 ; j <=10 ; j++){
+                ctr.innerHTML += "[i][j] = " + "["+i+"]["+j+"]"+"<br>";
+            }
+        }
+    </script>
+    
+</body>
+</html>

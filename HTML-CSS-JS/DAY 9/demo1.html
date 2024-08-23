@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="change">
+    <button onclick="change1()">click me </button>
+
+
+    <script>
+        let i = 0
+        function change1(){
+            if (i == 0){
+                document.getElementById('change').style.backgroundColor='pink'
+                i = 1
+            }
+            else{
+                document.getElementById('change').style.backgroundColor=''
+                i = 0
+            }
+        }
+    </script>
+</body>
+</html>
